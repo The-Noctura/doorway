@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +10,12 @@
 </head>
 <body>
   <header>
-
   </header>
 
   <main>
     <div class="login-container">
-      <h1>Login</h1>
+      <h1>Selamat Datang kembali!</h1>
+      <p>Kami merindukanmu! Silakan masukkan detail Anda..</p>
       <form method="POST" action="/doorway/includes/proses_login.php">
         <div class="input-group">
           <label for="username">Username</label>
@@ -38,11 +38,18 @@
               autocomplete="current-password"
              required
           >
+          <div class="form-options">
+            <div class="remember-options">
+              <input type="checkbox" name="remember" id="remember">
+              <label for="remember">Ingat saya</label>
+            </div>
+            <a href="#">Lupa password</a>
+          </div>
         </div>
         <button type="submit">Login</button>
       </form>
+      <p>Belum punya akun? <a href="signup.php" class="signup-btn">sign up</a></p>
     </div>
   </main>
-
 </body>
 </html>
