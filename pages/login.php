@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page - Login</title>
     <link rel="stylesheet" href="../assets/css/login.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -40,6 +41,9 @@
           required
           >
           <label for="password">Password</label>
+          <button id="toggle-btn">
+            <i class="fa-regular fa-eye" id="toggle-icon"></i>
+          </button>
         </div>
         <div class="form-options">
           <div class="remember-options">
@@ -48,10 +52,12 @@
           </div>
           <a href="#">Lupa password</a>
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" class="submit">Login</button>
       </form>
       <p>Belum punya akun? <a href="signup.php" class="signup-btn">sign up</a></p>
     </div>
   </main>
+
+  <script src="/assets/js/script.js"></script>
 </body>
 </html>
