@@ -14,37 +14,39 @@
 
   <main>
     <div class="login-container">
-      <h1>Selamat Datang kembali!</h1>
-      <p>Kami merindukanmu! Silakan masukkan detail Anda..</p>
+      <div class="header-login">
+        <h1>Selamat Datang kembali!</h1>
+        <p>Kami merindukanmu! Silakan masukkan detail Anda..</p>
+      </div>
       <form method="POST" action="/doorway/includes/proses_login.php">
         <div class="input-group">
-          <label for="username">Username</label>
           <input
-              type="text"
-              id="username"
-              name="username"
-              placeholder=" "
-              autocomplete="username"
-              required
+          type="text"
+          id="username"
+          name="username"
+          placeholder=" "
+          autocomplete="username"
+          required
           >
+          <label for="username">Username</label>
         </div>
         <div class="input-group">
-          <label for="password">Password</label>
           <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder=" "
-              autocomplete="current-password"
-             required
+          type="password"
+          id="password"
+          name="password"
+          placeholder=" "
+          autocomplete="current-password"
+          required
           >
-          <div class="form-options">
-            <div class="remember-options">
-              <input type="checkbox" name="remember" id="remember">
-              <label for="remember">Ingat saya</label>
-            </div>
-            <a href="#">Lupa password</a>
+          <label for="password">Password</label>
+        </div>
+        <div class="form-options">
+          <div class="remember-options">
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Ingat saya</label>
           </div>
+          <a href="#">Lupa password</a>
         </div>
         <button type="submit">Login</button>
       </form>
